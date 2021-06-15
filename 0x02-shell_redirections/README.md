@@ -45,3 +45,11 @@ Project 0x02-shel _redirection
 21. esreveR ---Ans: rev
 
 22. DJ Cut Killer ----Ans: cut -d: -f 1,6 /etc/passwd | sort -d
+
+23. Empty casks make the most noise ---Ans: find -empty|rev|cut -d'/' -f 1|rev
+
+24. A gif is worth ten thousand words ----Ans: find . -type f -name "*.gif"|rev|cut -d"/" -f 1|cut -d"." -f 2-|rev|sort -Vf
+
+25. Acrostic ----Ans: cut -c 1|paste -s -d ''
+
+26. The biggest fan ----Ans: tail -n +2 | cut -f1 | sort | uniq -c | sort -gr | rev | cut -f1 -d ' ' | rev | head -11
