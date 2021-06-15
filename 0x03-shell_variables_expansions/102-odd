@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1|xargs|cut -s -d" " -f $(seq 1 2 $(ls -1|wc -l)|xargs|cut -s -d" " --output-delimeter=$'\n' -f 1-
